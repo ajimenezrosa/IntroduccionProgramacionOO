@@ -1,3 +1,4 @@
+![](https://upload.wikimedia.org/wikipedia/commons/3/35/Escudo_UCSD.png)
 # 10 Ejercicios resueltos con el ciclo while en C#
 #### 
 
