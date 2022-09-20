@@ -1,5 +1,5 @@
 ![](https://upload.wikimedia.org/wikipedia/commons/3/35/Escudo_UCSD.png)
-# 10 Ejercicios resueltos con el ciclo while en C#
+# 8 Ejercicios resueltos con el ciclo while en C#
 #### 
 
 #### En esta ocasión, y para reforzar los conocimientos del ciclo while, he creado una serie de 8 ejercicios para que practiques las habilidades aprendidas.
