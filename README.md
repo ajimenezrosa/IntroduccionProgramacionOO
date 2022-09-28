@@ -405,6 +405,59 @@ namespace ConsoleTests
 ~~~
 
 
+## practica de metodos
+~~~C#
+// See https://aka.ms/new-console-template for more information
+//Console.WriteLine("Hello, World!");
+
+
+//Console.WriteLine("Hola");
+//Console.WriteLine("Hola 2");
+
+//Console.ReadLine();
+
+//Console.WriteLine("Hola");
+//Console.WriteLine("Hola 2");
+
+//Console.ReadLine();
+Console.ReadKey();
+//Imprimir();
+
+//Imprimir2("Ricardo");
+//Imprimir2("Jose Angel");
+
+
+Imprimir2(
+    retornarString("Alejandro")
+    );
+
+static void Imprimir()
+{
+    Console.Clear();
+    Console.WriteLine("Hola 1");
+    Console.WriteLine("Hola 2");
+    Console.ReadLine();
+}
+
+
+// metodo con  parametros
+static void Imprimir2(string nombre )
+{
+    Console.Clear();
+    Console.WriteLine("Hola " + nombre);
+    Console.ReadKey();
+}
+
+
+
+ string retornarString(string nombre)
+{
+    nombre = Console.ReadLine();
+    return "Retorno de valor " + nombre;
+}
+
+~~~
+
 
 
 
