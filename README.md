@@ -19,6 +19,8 @@
 ##### 7 7.- [Realiza un programa en C#, que muestre un menú en pantalla con las opciones:1) Sumar2) Restar3) Multiplicar4) Dividir5) SalirEl usuario debe seleccionar una opción. y a continuación, el programa deber solicitar el ingreso de 2 números enteros. Una vez ingresados los números, se deberá evaluar con un switch, realizando la operación correspondiente a la opción seleccionada.La ejecución debe realizarse una y otra vez, hasta que el usuario seleccione la opción # 5.](#ejer7)
 ##### 8 8.- [Realiza un programa en C#, que pida 2 números enteros, e imprima los números pares que existen entre los 2.Nota: Se debe validar que el segundo número sea mayor que el primero.](#ejer8)
 
+#### 9 - [Metodos](#metodos)
+
 #### 1.- Realiza un programa en C#, que muestre los primeros 100 números enteros iniciando desde el 1.<a name="ejer1"></a>
 ~~~c#
 using System;
@@ -225,7 +227,7 @@ class Program
 
 
 #
-# Metodos
+# Metodos<a name="metodos"></a>
 
 #### Un método en C# es una sencuencia de enunciados dentro de una unidad lógica en nuestro programa. Son una de las partes escenciales en cualquier aplicación, y proporcionan una forma poderosa de ejecutar operaciones de forma ordenada.
 
