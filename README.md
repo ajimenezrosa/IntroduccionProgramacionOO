@@ -21,7 +21,10 @@
 #### 9 - [Metodos](#metodos)
 #### 10 - [Excepciones](#Excepciones)
 #### 10.1 - [El método Parse](#parse)
-
+#### 10.2 - [Estructura try-catch](#trycatch)
+#### 10.3 - [Tipos de Excepciones.](#TiposExceptiones)
+#### 10.4 - [Chequeo de Operaciones Aritmeticas a travez de **checked**](#checked)
+#### 10.5 - [Lanzando Excepciones a proposito.](#lanzarExceptiones)
 
 
 #### 1.- Realiza un programa en C#, que muestre los primeros 100 números enteros iniciando desde el 1.<a name="ejer1"></a>
@@ -497,7 +500,7 @@ Colocamos el Siguiente Codigo
 
 
 
-## Estructura try-catch
+## Estructura try-catch<a name="trycatch"></a>
 #### La instrucción try-catch consta de un bloque try seguido de una o más cláusulas catch que especifican controladores para diferentes excepciones.
 # 
 #### Cuando se produce una excepción, Common Language Runtime (CLR) busca la instrucción catch que controla esta excepción. Si el método que se ejecuta actualmente no contiene un bloque catch, CLR busca el método que llamó el método actual, y así sucesivamente hasta la pila de llamadas. Si no existe ningún bloque catch, CLR muestra al usuario un mensaje de excepción no controlada y detiene la ejecución del programa.
@@ -589,7 +592,7 @@ Console.ReadLine();
 
 #### Este sería un buen ejemplo de cómo se manejan las excepciones en C#.
 
-## Tipos de Excepciones.
+## Tipos de Excepciones.<a name="TiposExceptiones"></a>
 
 #### Al ver esto te debes estar preguntando: **¿Necesito aprender cada uno de los tipos de excepción que existen en C#?**
 
@@ -612,7 +615,7 @@ Console.ReadLine();
 ~~~        
 
 
-## Chequeo de Operaciones Aritmeticas a travez de **checked**
+## Chequeo de Operaciones Aritmeticas a travez de **checked**<a name="checked"></a>
 
 
 #### Usamos el siguiente código como un ejemplo del uso de marcado para la validación de enteros.
@@ -660,7 +663,7 @@ en este caso presenta un excepcion **OverflowException**
 ### Nota: con un **unchecked** el error no se presentara debido anulamos la verificacion.  pero debemos tener en claro que el dato que retorna puedo o no se correcto. 
 #
 
-## Lanzando Excepciones a proposito.
+## Lanzando Excepciones a proposito.<a name="lanzarExceptiones"></a>
 #
 Para este ejemplo utilizarmos el suguiente codigo
 
