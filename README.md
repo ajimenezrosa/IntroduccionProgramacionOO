@@ -493,3 +493,94 @@ Colocamos el Siguiente Codigo
 ~~~
 
 
+
+## Estructura try-catch
+#### La instrucción try-catch consta de un bloque try seguido de una o más cláusulas catch que especifican controladores para diferentes excepciones.
+# 
+#### Cuando se produce una excepción, Common Language Runtime (CLR) busca la instrucción catch que controla esta excepción. Si el método que se ejecuta actualmente no contiene un bloque catch, CLR busca el método que llamó el método actual, y así sucesivamente hasta la pila de llamadas. Si no existe ningún bloque catch, CLR muestra al usuario un mensaje de excepción no controlada y detiene la ejecución del programa.
+
+
+#### Codigo C#
+~~~C#
+string numeroGrande = "999999999";
+int numeroConvertido = int.Parse(NumeroGrande);
+
+Console.WriteLIne(NumeroConvertido);
+
+Console.ReadLine();
+~~~
+
+    Para el caso del ejemplo anterior podemos ver que funciona correctamente, imprimirá 999999999.
+
+    Pero si hace la prueba y agrega otro número 9 a la lista, esto dará un error.
+
+    Este tipo de errores son los que debemos controlar usando nuestras excepciones.
+
+#### Estos son los errores con los que nosotros, como programadores, debemos aprender a lidiar.
+
+#### para esto usaremos una estructura llamada try-catch
+#### las estructura es la siguiente:
+    try
+    {
+         Operaciones que queremos llevar a cabo con comprobaciones
+    }
+    catch(Tipo de Excepcion ex)
+    {
+        Operaciones que se ejecutaran en dado caso de que ocurra una excepcion
+    }
+
+#### Siguiendo esta plantilla que tenemos aquí procederemos a crear este código en c#
+
+~~~C#
+
+    //Ejemplo #2
+    try
+    {
+         int valor - 10;
+         Console.WriteLine(valor / 0);
+    }
+    catch(DivideByZeroException ex)
+    {
+        Console.WriteLine("No se puede dividir entre cero");
+    }
+
+
+    //Ejemplo #2
+    try
+    {
+        string numeroEnCadena = '1a';
+        int valor2 = int.Parse(numeroEnCadena);
+    }
+    catch(DivideByZeroException ex)
+    {
+        Console.WriteLine("No se Puede dividir por Cero");
+    }
+    catch(FormatException ex)
+    {
+        Console.WriteLine("Unicamente se Aceptan Numeros");
+    }
+
+    // Ejemplo #3
+
+    try
+    {
+        string numeroGrande = "999999999";
+        int numeroConvertido = int.Parse(numeroGrande);
+    }
+    catch(DivideByZeroException ex)
+    {
+        Console.WriteLine("No se Puede dividir por Cero");
+    }
+    catch(FormatException ex)
+    {
+        Console.WriteLine("Unicamente se Aceptan Numeros");
+    }
+    catch(OverflowException ex)
+    {
+        //En este caso utilizaremos el valor de la variable message.
+        Console.WriteLine(ex.Message);
+    }
+
+
+
+~~~
