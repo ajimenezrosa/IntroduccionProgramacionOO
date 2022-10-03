@@ -458,6 +458,38 @@ static void Imprimir2(string nombre )
 
 ~~~
 
+#
+# Excepciones
+#### Es algo muy común en una aplicación que desarrolle las cosas salen mal y es que muchas veces una pieza de código puede fallar debido a múltiples razones.
 
+#### Por lo que debemos asegurarnos de que nuestra aplicación pueda manejar dichas fallas o en el peor de los casos notificar al usuario sobre el problema lo más claramente posible esto lo podemos hacer A través de las excepciones.
+# 
+#### Para ver este tema de forma práctica vamos a crear un nuevo proyecto entonces seleccionamos nuevo proyecto aplicación de consola net framework que vamos a ponerle ***excepciones1demos***
+
+Colocamos el Siguiente Codigo
+~~~C#
+    int valor - 10;
+    Console.WriteLine(valor / 0);
+~~~
+
+#### No es posible dividir entre cero , esto deberia darnos un error.
+    Excepcion no controlada
+    System.DivideByZeroException: 'Intento dividir por cero'
+
+
+
+## El método Parse
+#### Una forma de minimizar los errores en nuestro programa es la siguiente.
+
+#### Podemos convertir cadenas de texto en números utilizando el método de análisis.
+# 
+~~~C#
+    string numeroEnCadena = "10";
+    int valor = int.Parse(NumeroEnCadena);
+
+    Console.WriteLine(valor);
+
+    Console.ReadLine();
+~~~
 
 
