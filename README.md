@@ -18,8 +18,11 @@
 ##### 6 6.- [Realiza un programa en C#, que pida números mientras no se ingrese uno negativo. Al final, se debe mostrar la suma de los números ingresados](#ejer6)
 ##### 7 7.- [Realiza un programa en C#, que muestre un menú en pantalla con las opciones:1) Sumar2) Restar3) Multiplicar4) Dividir5) SalirEl usuario debe seleccionar una opción. y a continuación, el programa deber solicitar el ingreso de 2 números enteros. Una vez ingresados los números, se deberá evaluar con un switch, realizando la operación correspondiente a la opción seleccionada.La ejecución debe realizarse una y otra vez, hasta que el usuario seleccione la opción # 5.](#ejer7)
 ##### 8 8.- [Realiza un programa en C#, que pida 2 números enteros, e imprima los números pares que existen entre los 2.Nota: Se debe validar que el segundo número sea mayor que el primero.](#ejer8)
-
 #### 9 - [Metodos](#metodos)
+#### 10 - [Excepciones](#Excepciones)
+#### 10.1 - [El método Parse](#parse)
+
+
 
 #### 1.- Realiza un programa en C#, que muestre los primeros 100 números enteros iniciando desde el 1.<a name="ejer1"></a>
 ~~~c#
@@ -459,7 +462,7 @@ static void Imprimir2(string nombre )
 ~~~
 
 #
-# Excepciones
+# Excepciones<a name="Excepciones"></a>
 #### Es algo muy común en una aplicación que desarrolle las cosas salen mal y es que muchas veces una pieza de código puede fallar debido a múltiples razones.
 
 #### Por lo que debemos asegurarnos de que nuestra aplicación pueda manejar dichas fallas o en el peor de los casos notificar al usuario sobre el problema lo más claramente posible esto lo podemos hacer A través de las excepciones.
@@ -478,7 +481,7 @@ Colocamos el Siguiente Codigo
 
 
 
-## El método Parse
+## El método Parse<a name="parse"></a>
 #### Una forma de minimizar los errores en nuestro programa es la siguiente.
 
 #### Podemos convertir cadenas de texto en números utilizando el método de análisis.
@@ -582,5 +585,225 @@ Console.ReadLine();
     }
 
 
+~~~
+
+#### Este sería un buen ejemplo de cómo se manejan las excepciones en C#.
+
+## Tipos de Excepciones.
+
+#### Al ver esto te debes estar preguntando: **¿Necesito aprender cada uno de los tipos de excepción que existen en C#?**
+
+### ***¡¡Bueno en realidad no!!***
+
+#### En el lenguaje C# tenemos un tipo de excepción especial que maneja todos los tipos de excepciones que no estamos manejando a través de capturas.
+
+    Ejemplo 
+~~~c#
+        string s = null; // For demonstration purposes.
+
+        try
+        {
+            ProcessString(s);
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine("{0} Exception caught.", e);
+        }
+~~~        
+
+
+## Chequeo de Operaciones Aritmeticas a travez de **checked**
+
+
+#### Usamos el siguiente código como un ejemplo del uso de marcado para la validación de enteros.
+~~~C#
+    // esto me asigna el valor maximo de int a la variable entero
+    int entero = int.MaxValue;
+
+    // incremento en uno este valor
+    entero++;
+
+    Console.WriteLine(entero);
+    console.ReadLine();
+~~~
+
+#### Como puedes ver, al ejecutar este código, no presenta ningún error en el programa.
+
+#### Pero los datos presentados por él son incorrectos. Esto se debe a que las operaciones con enteros son muy comunes y es muy costoso verificar operación por operación.
+
+#### para este tipo de casos usaremos el marcado
+
+~~~C#
+
+    // esto me asigna el valor maximo de int a la variable entero
+    int entero = int.MaxValue;
+
+    checked {
+        // incremento en uno este valor
+        entero++;
+    }
+
+    Console.WriteLine(entero);
+    console.ReadLine();
 
 ~~~
+
+en este caso presenta un excepcion **OverflowException**
+
+#### Otra forma de que esto funciones es la siguiente.
+~~~c#
+    entero = checked(entero++);
+~~~
+
+#### Para saltarnos esta validacion colocamos un **unchecked** en el codigo en vez de **checked**
+
+### Nota: con un **unchecked** el error no se presentara debido anulamos la verificacion.  pero debemos tener en claro que el dato que retorna puedo o no se correcto. 
+#
+
+## Lanzando Excepciones a proposito.
+#
+Para este ejemplo utilizarmos el suguiente codigo
+
+
+~~~C#
+
+    static string obternerSignoZodiacal(int numeroMes)
+    {
+    string resultado = string.Empty;
+        switch(numeroMes)
+        {
+            case 1:
+                resultado = "Aries";
+                break;
+            case 1:
+                resultado = "Tauro";
+                break;
+            case 1:
+                resultado = "Geminis";
+                break;
+            case 1:
+                resultado = "Cancer";
+                break;
+            case 1:
+                resultado = "leo";
+                break;
+            case 1:
+                resultado = "Virgo";
+                break;
+            case 1:
+                resultado = "Libra";
+                break;
+            case 1:
+                resultado = "Escorpion";
+                break;
+            case 1:
+                resultado = "Sagitario";
+                break;
+            case 1:
+                resultado = "Capricornio";
+                break;
+            case 1:
+                resultado = "Acuario";
+                break;
+            case 1:
+                resultado = "Pisis";
+                break;
+        }
+
+    return resultado;
+
+    }
+~~~
+
+#### Luego de esto procederemos a llamar a nuestro método para que muestre el signo zodiacal que corresponde al mes en cuestión.
+
+~~~C#
+    int mes int.Parse(Console.ReadLine());
+
+    Console.WriteLine(ObtenerSignoZodiacal(mes));
+    
+    Console.ReadLine();
+~~~
+
+#
+
+
+#### Para este código, qué pasaría si al ejecutar la aplicación ingresé el mes número 50, por ejemplo.
+
+
+#### En nuestro caso, debemos lanzar una excepción para que se sepa que el dato suministrado no es el esperado.
+   en este caso usaremos la expresión **default** en nuestro **switch**.
+
+    default:
+        throw new InvalidOperationException("Mes Invalido");
+
+~~~C#
+
+    static string obternerSignoZodiacal(int numeroMes)
+    {
+    string resultado = string.Empty;
+        switch(numeroMes)
+        {
+            case 1:
+                resultado = "Aries";
+                break;
+            case 1:
+                resultado = "Tauro";
+                break;
+            case 1:
+                resultado = "Geminis";
+                break;
+            case 1:
+                resultado = "Cancer";
+                break;
+            case 1:
+                resultado = "leo";
+                break;
+            case 1:
+                resultado = "Virgo";
+                break;
+            case 1:
+                resultado = "Libra";
+                break;
+            case 1:
+                resultado = "Escorpion";
+                break;
+            case 1:
+                resultado = "Sagitario";
+                break;
+            case 1:
+                resultado = "Capricornio";
+                break;
+            case 1:
+                resultado = "Acuario";
+                break;
+            case 1:
+                resultado = "Pisis";
+                break;
+            default :
+                throw new InvalidOperationException("Mes Invalido")    
+            }
+
+            return resultado;
+
+    }
+~~~
+
+
+
+con esto colocamos un try catch al momento de ejecutar nuestro método.
+
+~~~C#
+    int mes = int.Parse(Console.ReadLine());
+
+    try
+    {
+        console.WriteLine(OptenerSignoZodiacal(mes));
+    }
+    catch(Exception ex)
+    {
+        Console.WriteLine(ex.Message);
+    }
+~~~
+
+Ejecute la aplicación e ingrese un mes que no existe
