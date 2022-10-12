@@ -820,13 +820,9 @@ con esto colocamos un try catch al momento de ejecutar nuestro método.
 Ejecute la aplicación e ingrese un mes que no existe
 
 
-<<<<<<< HEAD
-## Ejercicios para el Aula
-=======
+
 
 ## Ejercicios para el Aula<a name="EjercicioMetodoExcepciones"></a>
->>>>>>> c4cd99cb4050f5051382ef8352ad5565f9505d4f
-
 #### Haz este ejercicio en el salón de clases:
 #### Trate de no copiar, escriba los comandos y de esta manera se familiarizará con ellos.
 #
