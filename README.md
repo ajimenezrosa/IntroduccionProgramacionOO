@@ -26,6 +26,14 @@
 #### 10.4 - [Chequeo de Operaciones Aritmeticas a travez de **checked**](#checked)
 #### 10.5 - [Lanzando Excepciones a proposito.](#lanzarExceptiones)
 
+#### [Ejercicios para el Aula](#EjercicioMetodoExcepciones)
+
+
+#### [Practica #2 Metodos y Excepciones.](#EjercicioMetodoExcepciones2)
+
+
+
+#
 
 #### 1.- Realiza un programa en C#, que muestre los primeros 100 números enteros iniciando desde el 1.<a name="ejer1"></a>
 ~~~c#
@@ -813,7 +821,7 @@ Ejecute la aplicación e ingrese un mes que no existe
 
 
 
-## Ejercicios para el Aula
+## Ejercicios para el Aula<a name="EjercicioMetodoExcepciones"></a>
 
 #### Haz este ejercicio en el salón de clases:
 #### Trate de no copiar, escriba los comandos y de esta manera se familiarizará con ellos.
@@ -1037,7 +1045,7 @@ namespace ConsoleApp1
 
 ~~~
 
-## **Practica #2 Metodos y Excepciones.**
+## **Practica #2 Metodos y Excepciones.**<a name="EjercicioMetodoExcepciones2"></a>
 #
 #### Cree un programa C# que devuelva el día de la semana y el mes a partir de dos entradas numéricas.
 #### Valide mediante el manejo de excepciones que el programa no se rompa al recibir un mes o día incorrecto.
