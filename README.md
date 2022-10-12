@@ -909,13 +909,13 @@ Ahora haremos la segunda parte del Ejercicio:
 A este mismo código le colocaremos el Try-Catch para el manejo de excepciones.
 Lo primero que debemos hacer es generar una excepción en el programa.
 Si tiene dudas, lea nuevamente.
+#
+#### 10.2 - [Estructura try-catch](#trycatch)
+#### 10.3 - [Tipos de Excepciones.](#TiposExceptiones)
+#### 10.4 - [Chequeo de Operaciones Aritmeticas a travez de **checked**](#checked)
+#### 10.5 - [Lanzando Excepciones a proposito.](#lanzarExceptiones)
 
-    10.2 - Estructura try-catch
-    10.3 - Tipos de Excepciones.
-    10.4 - Chequeo de Operaciones Aritmeticas a travez de checked
-    10.5 - Lanzando Excepciones a proposito.
-
-
+#
 ~~~C#
 
         static string DiasDeLaSemana(int dia)
