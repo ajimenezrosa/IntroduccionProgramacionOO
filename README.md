@@ -810,3 +810,79 @@ con esto colocamos un try catch al momento de ejecutar nuestro método.
 ~~~
 
 Ejecute la aplicación e ingrese un mes que no existe
+
+
+## Ejercicios para el Aula
+
+#### Haz este ejercicio en el salón de clases:
+#### Trate de no copiar, escriba los comandos y de esta manera se familiarizará con ellos.
+#
+
+
+~~~C#
+using System;
+
+namespace ConsoleApp1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Dias de la Semana!");
+            Console.WriteLine("Digite el dia de la Semana(Solo Numeros):");
+            int valor = int.Parse(Console.ReadLine());
+
+            Console.WriteLine(
+                    DiasDeLaSemana(valor)
+                );
+
+        }
+
+
+        /* Como puedes ver la Declaracion del metodo **DiasDeLaSemana** esta fuera del static void Main(string[] args) 
+
+        pero para llamarlo lo hacemos desde dentro del static void Main(string[] args)
+
+        Nota: Si tienes Visual Studio 2022 no tendras que colocar el static void Main(string[] args)
+
+            */
+        static string DiasDeLaSemana(int dia)
+        {
+            string resultado = "";
+            switch (dia)
+            {
+                case 1:
+                    resultado = "Lunes";
+                    break;
+                case 2:
+                    resultado = "Martes";
+                    break;
+                case 3:
+                    resultado = "Miercoles";
+                    break;
+                case 4:
+                    resultado = "Jueves";
+                    break;
+                case 5:
+                    resultado = "viernes";
+                    break;
+                case 6:
+                    resultado = "Sabado";
+                    break;
+                case 7: resultado = "Domingo";
+                    break;
+
+            }
+
+            return resultado;
+
+
+        }
+
+
+    }
+}
+
+~~~
+
+
