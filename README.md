@@ -26,10 +26,10 @@
 #### 10.4 - [Chequeo de Operaciones Aritmeticas a travez de **checked**](#checked)
 #### 10.5 - [Lanzando Excepciones a proposito.](#lanzarExceptiones)
 
-#### [Ejercicios para el Aula](#EjercicioMetodoExcepciones)
+#### 10.7   [Ejercicios para el Aula](#EjercicioMetodoExcepciones)
 
 
-#### [Practica #2 Metodos y Excepciones.](#EjercicioMetodoExcepciones2)
+#### 10.8   [Practica #2 Metodos y Excepciones.](#EjercicioMetodoExcepciones2)
 
 
 
