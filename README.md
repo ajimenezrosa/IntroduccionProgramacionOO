@@ -1037,7 +1037,7 @@ namespace ConsoleApp1
 
 ~~~
 
-## Practica #2 Metodos y Excepciones.
+## **Practica #2 Metodos y Excepciones.**
 #
 #### Cree un programa C# que devuelva el día de la semana y el mes a partir de dos entradas numéricas.
 #### Valide mediante el manejo de excepciones que el programa no se rompa al recibir un mes o día incorrecto.
