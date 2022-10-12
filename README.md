@@ -810,3 +810,238 @@ con esto colocamos un try catch al momento de ejecutar nuestro método.
 ~~~
 
 Ejecute la aplicación e ingrese un mes que no existe
+
+
+
+## Ejercicios para el Aula
+
+#### Haz este ejercicio en el salón de clases:
+#### Trate de no copiar, escriba los comandos y de esta manera se familiarizará con ellos.
+#
+
+#
+## Haz tu práctica:
+
+### Recuerda que la perseverancia es la clave del éxito;
+### Fíjate bien dónde pones los comandos; no hagas una copia del código. Tu principal objetivo es aprender, recuerda que este conocimiento te servirá mañana en tu vida profesional.
+
+## Mantén viva tu curiosidad pregunta, investiga
+
+
+
+~~~C#
+using System;
+
+namespace ConsoleApp1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Dias de la Semana!");
+            Console.WriteLine("Digite el dia de la Semana(Solo Numeros):");
+            int valor = int.Parse(Console.ReadLine());
+
+            Console.WriteLine(
+                    DiasDeLaSemana(valor)
+                );
+
+        }
+
+
+        /* Como puedes ver la Declaracion del metodo **DiasDeLaSemana** esta fuera del static void Main(string[] args) 
+
+        pero para llamarlo lo hacemos desde dentro del static void Main(string[] args)
+
+        Nota: Si tienes Visual Studio 2022 no tendras que colocar el static void Main(string[] args)
+
+            */
+        static string DiasDeLaSemana(int dia)
+        {
+            string resultado = "";
+            switch (dia)
+            {
+                case 1:
+                    resultado = "Lunes";
+                    break;
+                case 2:
+                    resultado = "Martes";
+                    break;
+                case 3:
+                    resultado = "Miercoles";
+                    break;
+                case 4:
+                    resultado = "Jueves";
+                    break;
+                case 5:
+                    resultado = "viernes";
+                    break;
+                case 6:
+                    resultado = "Sabado";
+                    break;
+                case 7: resultado = "Domingo";
+                    break;
+
+            }
+
+            return resultado;
+
+
+        }
+
+
+    }
+}
+
+~~~
+
+
+Ahora haremos la segunda parte del Ejercicio:
+
+A este mismo código le colocaremos el Try-Catch para el manejo de excepciones.
+Lo primero que debemos hacer es generar una excepción en el programa.
+Si tiene dudas, lea nuevamente.
+
+    10.2 - Estructura try-catch
+    10.3 - Tipos de Excepciones.
+    10.4 - Chequeo de Operaciones Aritmeticas a travez de checked
+    10.5 - Lanzando Excepciones a proposito.
+
+
+~~~C#
+
+        static string DiasDeLaSemana(int dia)
+        {
+            string resultado = "";
+            switch (dia)
+            {
+                case 1:
+                    resultado = "Lunes";
+                    break;
+                case 2:
+                    resultado = "Martes";
+                    break;
+                case 3:
+                    resultado = "Miercoles";
+                    break;
+                case 4:
+                    resultado = "Jueves";
+                    break;
+                case 5:
+                    resultado = "viernes";
+                    break;
+                case 6:
+                    resultado = "Sabado";
+                    break;
+                case 7: resultado = "Domingo";
+                    break;
+                // Agregamos esta parte del código para probar que el programa devuelve una excepción.
+                default:
+                    throw new InvalidOperationException("Dia Invalido!");
+            }
+
+            return resultado;
+
+
+        }
+~~~
+
+#### Ya casi terminas:
+####     Ahora debes colocar el try-catch, este debe estar en la parte del código en la cual llamar a la función.
+
+~~~C#
+            try
+            {
+
+                Console.WriteLine(
+                        DiasDeLaSemana(valor)
+                    );
+            }
+            catch(Exception ex)
+            {
+                // En este código capturamos la propiedad del Message de la excepción.
+                Console.WriteLine(ex.Message);
+            }
+~~~
+
+
+## Al final de nuestro código completo se vería así
+~~~C#
+using System;
+
+namespace ConsoleApp1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Dias de la Semana!");
+            Console.WriteLine("Digite el dia de la Semana(Solo Numeros):");
+            int valor = int.Parse(Console.ReadLine());
+
+
+            try
+            {
+
+                Console.WriteLine(
+                        DiasDeLaSemana(valor)
+                    );
+            }
+            catch(Exception ex)
+            {
+                // En este código capturamos la propiedad del Message de la excepción.
+                Console.WriteLine(ex.Message);
+            }
+
+
+        }
+
+        static string DiasDeLaSemana(int dia)
+        {
+            string resultado = "";
+            switch (dia)
+            {
+                case 1:
+                    resultado = "Lunes";
+                    break;
+                case 2:
+                    resultado = "Martes";
+                    break;
+                case 3:
+                    resultado = "Miercoles";
+                    break;
+                case 4:
+                    resultado = "Jueves";
+                    break;
+                case 5:
+                    resultado = "viernes";
+                    break;
+                case 6:
+                    resultado = "Sabado";
+                    break;
+                case 7: resultado = "Domingo";
+                    break;
+                // Agregamos esta parte del código para probar que el programa devuelve una excepción.
+                default:
+                    throw new InvalidOperationException("Dia Invalido!");
+            }
+
+            return resultado;
+
+
+        }
+
+
+    }
+}
+
+~~~
+
+## Practica #2 Metodos y Excepciones.
+#
+#### Cree un programa C# que devuelva el día de la semana y el mes a partir de dos entradas numéricas.
+#### Valide mediante el manejo de excepciones que el programa no se rompa al recibir un mes o día incorrecto.
+
+#### Tienes un ejemplo a seguir, primero haz el Ejercicio 1:
+#### Buena suerte
+# 
