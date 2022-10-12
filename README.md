@@ -1049,7 +1049,7 @@ namespace ConsoleApp1
 
 ~~~
 ## Practica #2 Metodos y Excepciones.
-=======
+
 ## **Practica #2 Metodos y Excepciones.**<a name="EjercicioMetodoExcepciones2"></a>
 
 #
