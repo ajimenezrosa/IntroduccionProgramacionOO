@@ -1081,7 +1081,17 @@ namespace ConsoleApp1
 |Avion Avanzar| Carro Avanzar|
 |-------------|--------------|
 |![](https://img.bekia.es/articulos/portada/46000/46368.jpg)|![](https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/genesis-gv80-2021-1600-01-1579079236.jpg)|
- si te fijas el término lo hemos especificado como una acción avanzar otro comportamiento que comparten ambos objetos son que tienen la capacidad de frenar de nuevo frenar es una acción es decir algo que los dos objetos pueden hacer o llevar a cabo Cuando alguien quiere llevar a cabo dicha acción ahora bien algo en lo que estaremos de acuerdo es que hasta hoy en día aún no existen carros voladores al alcance del público como quisiéramos por lo que el único de ambos sujetos que tiene la capacidad de volar es el avión de nuevo ocupamos un verbo para escribir algo que pueda hacer un avión volar con estas características y comportamientos que hemos visto de cada uno de los objetos podemos llegar a la conclusión de que podemos distinguir un automóvil de un avión basado en sus propiedades y comportamiento y que no importando Qué modelo automóvil sea siempre lo clasificaremos como automóvil De igual forma pasaría con un avión no importa el tamaño o número de motores de un avión para nosotros siempre será un avión debido a que ese es la clasificación que le hemos dado en el mundo real es por ello que la clasificación es tan importante porque así podemos comunicarnos de forma efectiva en el mundo de la programación a las características se les llama propiedades y a los comportamientos métodos tema que ya hemos visto anteriormente Por último el hecho de poder modelar objetos definiendo sus métodos y propiedades se le conoce como programación orientada a objetos
+#
+####  Si te fijas el término lo hemos especificado como una acción  
+    avanzar 
+#### Otro comportamiento que comparten ambos objetos son que tienen la capacidad de frenar, de nuevo frenar es una acción es decir algo que los dos objetos pueden hacer o llevar a cabo.
+#
+#### Cuando alguien quiere llevar a cabo dicha acción ahora bien algo en lo que estaremos de acuerdo es que hasta hoy en día aún no existen carros voladores al alcance del público como quisiéramos. Por lo que el único de ambos sujetos que tiene la capacidad de volar es el avión de nuevo ocupamos un verbo para escribir algo que pueda hacer un avión ***volar*** con estas características y comportamientos que hemos visto de cada uno de los objetos podemos llegar a la conclusión de que podemos distinguir un **automóvil** de un **avión** basado en sus **propiedades** y **comportamiento** y que no importando ***Qué modelo de automóvil sea siempre lo clasificaremos como automóvil*** De igual forma pasaría con un avión ***no importa el tamaño o número de motores de un avión para nosotros siempre será un avión*** debido a que ese es la clasificación que le hemos dado en el mundo real es ***por ello que la clasificación es tan importante porque así podemos comunicarnos de forma efectiva*** 
+#
+### En el mundo de la programación a las ***características se les llama propiedades*** y a los ***comportamientos métodos tema que ya hemos visto anteriormente*** 
+#
+### Por último el hecho de poder modelar objetos definiendo sus métodos y propiedades se le conoce como programación orientada a objetos.
+
 
 
 
