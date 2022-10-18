@@ -32,6 +32,9 @@
 #### 10.8   [Practica #2 Metodos y Excepciones.](#EjercicioMetodoExcepciones2)
 
 
+#### [11 - Clases y Objetos](#objetosClases)
+
+
 
 #
 
@@ -1044,7 +1047,7 @@ namespace ConsoleApp1
 }
 
 ~~~
-## Practica #2 Metodos y Excepciones.
+<!-- ## Practica #2 Metodos y Excepciones. -->
 
 ## **Practica #2 Metodos y Excepciones.**<a name="EjercicioMetodoExcepciones2"></a>
 
@@ -1056,7 +1059,7 @@ namespace ConsoleApp1
 #### Buena suerte
 # 
 
-## Clases y Objetos
+## Clases y Objetos<a name="objetosClases"></a>
 
 #### la palabra clase es la raíz de la palabra clasificación y es que a menudo solemos utilizar clasificaciones en nuestro día a día.
 #### Por ejemplo Fíjate en la imagen tenemos una imagen de un automóvil al verlo seguramente has pensado lo mismo que yo es un automóvil no importa su color marca.
@@ -1092,6 +1095,7 @@ namespace ConsoleApp1
 #
 ### Por último el hecho de poder modelar objetos definiendo sus métodos y propiedades se le conoce como programación orientada a objetos.
 
+#
 
 
 
