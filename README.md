@@ -1107,3 +1107,37 @@ namespace ConsoleApp1
 #### Vamos a ir viendo esos conceptos poco a poco, Iniciaremos con el pilar llamado Encapsulamiento.
 # 
 ##  Encapsulamiento.
+#### Basicamente este Pilar se refiere a la funcionalidad que esta como se nombre lo dice Encapsulada en algun objeto para que otra persona pueda utilizarla sin necesidad de conocer su comportamiento interno.
+#
+#### Es decir , cuando utilizamos un Carro por Ejemplo. De lo unico que tenemos que preocuparnos es de saber conducir.
+#
+#### Si te preguntaran cosas sobre el funcionamiento Interno del Motor , la Transmision o algun otro componente que compone este vehiculo y que es necesario para que este funcione, lo mas probable  es que no tengas idea de como estos funcionan.
+#
+#### Sin embargo esto no es necesario que lo sepas, ya que el automovil fue disenado para que los conductores puedan utilizarlo sin la necesidad conocer estos componentes. Para esto solo es necesario que sepas conducir para poder ir de un lado a otro con tu vehiculo.
+#
+
+#### Lo mismo paso con una funcionalidad que hemos ocupado hasta ahora, la funcionalidad seria 
+~~~C#
+    Console.WriteLine("Hola POO");
+~~~    
+#### Si te has podido dar cuenta no tenemos idea de que hace este metodo internamente porque es un metodo o una funcionalidad, pero hemos sido capaz de ocuparlo una y otra vez, ya que para eso se ha creado para imprimir un texto en la consola sin que tengamos que preocuparnos por cómo funciona este método, podemos decir que la funcionalidad de 
+~~~c# 
+Console.WriteLine("Hola POO"); 
+~~~ 
+#### está encapsulada con los conceptos anteriores en mente. vamos a proceder a crear nuestras primeras clases
+
+#
+## Que es una Clase?
+#### Hasta ahora hemos visto acerca de las propiedades y métodos de un objeto como un automóvil o un avión, esas propiedades y métodos en el mundo de **C#** tienen que ir dentro de un concepto llamado **clase**
+#### Para que quede en términos simples, una clase no es más que nada un molde. con las caracteristicas y funcionalidad que define un objeto en el mundo real ya sea tangible o intangible veamos el ejemplo.
+![](https://falabella.scene7.com/is/image/FalabellaCO/3831515_1?wid=800&hei=800&qlt=70)
+
+#### en esta Imagen tenemos una serie de moldes que especifican la forma que tendra una galleta. 
+#
+#### En el mundo de la construccion Algo similar sucede en esta área, los planos de casas se utilizan para llevar a cabo la construcción de una o más casas que tienen las mismas características si se siguen las especificaciones del mismo plano.
+#
+![](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAZkPNEcSdk6qQ7dJyS5ubdTfxNZk1RaA6HttNryXHATH1OrcvqXVN12LUfZiLKUqzqtg&usqp=CAU)
+
+####  Lo mismo sucede en la programación orientada a objetos la clase será la plantilla que usaremos para crear varios objetos del mismo tiempo mas adelante lo veremos en detalle por el momento Quedate con la idea de que en la clase se deben especificar los metodos y atributos prueba que queremos que un objeto tenga
+# 
+
