@@ -1097,5 +1097,13 @@ namespace ConsoleApp1
 
 #
 
+## Pilares de Poo
+#### Cuando hablamos de la programacion orientada a objetos debemos tener en cuenta los cuatro Pilares sobre los cuales esta basada.
+- El encapsulamiento
+- La abstraccion 
+- La herencia 
+- El Polimorfismo
 
-
+#### Vamos a ir viendo esos conceptos poco a poco, Iniciaremos con el pilar llamado Encapsulamiento.
+# 
+##  Encapsulamiento.
