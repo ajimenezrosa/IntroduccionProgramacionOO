@@ -33,8 +33,8 @@
 
 
 #### [11 - Clases y Objetos](#objetosClases)
-
-
+#### [11.1 - Pilares de Poo](#pilares)
+#### [11.2 - Que es una Clase](#clases)
 
 #
 
@@ -1097,7 +1097,7 @@ namespace ConsoleApp1
 
 #
 
-## Pilares de Poo
+## Pilares de Poo<a name="pilares"></a>
 #### Cuando hablamos de la programacion orientada a objetos debemos tener en cuenta los cuatro Pilares sobre los cuales esta basada.
 - El encapsulamiento
 - La abstraccion 
@@ -1127,7 +1127,7 @@ Console.WriteLine("Hola POO");
 #### está encapsulada con los conceptos anteriores en mente. vamos a proceder a crear nuestras primeras clases
 
 #
-## Que es una Clase?
+## Que es una Clase?<a name="clases"></a>
 #### Hasta ahora hemos visto acerca de las propiedades y métodos de un objeto como un automóvil o un avión, esas propiedades y métodos en el mundo de **C#** tienen que ir dentro de un concepto llamado **clase**
 #### Para que quede en términos simples, una clase no es más que nada un molde. con las caracteristicas y funcionalidad que define un objeto en el mundo real ya sea tangible o intangible veamos el ejemplo.
 ![](https://falabella.scene7.com/is/image/FalabellaCO/3831515_1?wid=800&hei=800&qlt=70)
@@ -1141,3 +1141,6 @@ Console.WriteLine("Hola POO");
 ####  Lo mismo sucede en la programación orientada a objetos la clase será la plantilla que usaremos para crear varios objetos del mismo tiempo mas adelante lo veremos en detalle por el momento Quedate con la idea de que en la clase se deben especificar los metodos y atributos prueba que queremos que un objeto tenga
 # 
 
+# Ver video de ejemplo de creacion de Clases.
+
+#
