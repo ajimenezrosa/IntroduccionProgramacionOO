@@ -35,6 +35,8 @@
 #### [11 - Clases y Objetos](#objetosClases)
 #### [11.1 - Pilares de Poo](#pilares)
 #### [11.2 - Que es una Clase](#clases)
+#### [11.3 Definiendo Metodos para la Clase](#definicionmetodos)
+#### [11.4 Creando Instancias de una Clase](#CreandoinstanciaClase)
 
 #
 
@@ -1144,7 +1146,7 @@ Console.WriteLine("Hola POO");
 # Ver video de ejemplo de creacion de Clases.
 
 #
-# Definiendo Metodos para la Clase 
+# Definiendo Metodos para la Clase<a name="definicionmetodos"></a>
 #### ya tenemos nuestra Clase declarada con nuestras propiedades , lo siguiente es la Creacion de nuevos metodos en la misma
 
 #### De tener dudas sobre este tema puedes consultar nuestro capitulo sobre los metodos.
@@ -1187,7 +1189,7 @@ namespace Rectangulo
 ~~~
 #
 
-# Creando Instancias de una Clase
+# Creando Instancias de una Clase<a name="CreandoinstanciaClase"></a>
 
 #### Como puedes ver creamos dos metodos en nuestra Clase.  ***CalcularArea()*** y ***CalcularPerimetro()*** estos metodos no contienen parametros para hacer nuestros calculos debido a que los parametros que necesitamos ya estan declarados como propiedades dentro de nuestra clase.
 # 
