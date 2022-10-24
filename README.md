@@ -1144,3 +1144,48 @@ Console.WriteLine("Hola POO");
 # Ver video de ejemplo de creacion de Clases.
 
 #
+# Definiendo Metodos para la Clase 
+#### ya tenemos nuestra Clase declarada con nuestras propiedades , lo siguiente es la Creacion de nuevos metodos en la misma
+
+#### De tener dudas sobre este tema puedes consultar nuestro capitulo sobre los metodos.
+
+#### 9 - [Metodos](#metodos)
+#### En el mismo podras encontrar lo necesaria para poder crear metodos, sus tipos y caracteristicas.
+# 
+~~~c#
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace Rectangulo
+{
+    internal class Rectangulo
+    {
+        double baseRectangulo;
+        double alturaRectangulo;
+        string color;
+
+
+        double CalcularArea()
+        {
+            // A = h * b;
+
+            return alturaRectangulo * baseRectangulo;
+        }
+
+        double CalcularPerimetro()
+        {
+
+            // P = 2 * h + 2 * b
+            return (2 * alturaRectangulo) + (2 * baseRectangulo);
+        }
+
+
+
+    }
+}
+~~~
+
+#### Como puedes ver creamos dos metodos en nuestra Clase.  ***CalcularArea()*** y ***CalcularPerimetro()*** estos metodos no contienen parametros para hacer nuestros calculos debido a que los parametros que necesitamos ya estan declarados como propiedades dentro de nuestra clase.
+
+
