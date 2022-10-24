@@ -1200,4 +1200,27 @@ namespace Rectangulo
 #
 ####  El caso es que siempre tendremos galletas diferentes lo mismo pasa con una clase,  ***en el  caso de las clases el resultado no serán galletas sino objetos*** también conocidos Como ***instancias de una clase*** esto podría traducirse como ***objeto de una clase x*** vamos a regresar a visual estudio para crear nuestra primera instancia de una clase u objeto.
 
+# 
 
+
+#### Ahora  en visual estudio vamos a hacer la demostración yéndonos al archivo que se llama programa.cs que es donde tenemos definido el método ***main*** dentro de nuestro método estático Main vamos a definir entonces la instancia de la clase rectángulo si te fijas anteriormente definimos lo que es una variable en este caso definiendo el tipo de dato por ejemplo y le poníamos un hombre por
+~~~C#
+namespace ClaseDemo1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int Variable = 0;
+        }
+    }
+
+
+}
+
+~~~
+
+
+ <!-- ejemplo variable y r = algo sí quisiéramos definir una nueva -->
+
+ 
