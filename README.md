@@ -1256,3 +1256,22 @@ Yo puedo definir otro rectangulo y definir que mi nuevo rectangulo se llamara re
 
 #
 
+
+# Controlando la Accesibilidad a una clase
+
+# Constructores de una clase
+
+# SobreCarga de contructores
+
+# Destruyendo un objeto
+
+# Metodos Staticos
+
+# Campos Compartidos
+
+# Campos Compartidos Constantes
+
+# Clases Estaticas
+
+# Enunciados asing estaticos
+
