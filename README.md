@@ -1185,7 +1185,19 @@ namespace Rectangulo
     }
 }
 ~~~
+#
+
+# Creando Instancias de una Clase
 
 #### Como puedes ver creamos dos metodos en nuestra Clase.  ***CalcularArea()*** y ***CalcularPerimetro()*** estos metodos no contienen parametros para hacer nuestros calculos debido a que los parametros que necesitamos ya estan declarados como propiedades dentro de nuestra clase.
+# 
+#### Bien ya hemos terminado de Definir la estructura de la clase Ahora la pregunta es cómo lo utilizamos antes de ir a ***visual Studio*** quiero que tomes especial atención a la imagen que aparece en la pantalla.
+![](https://falabella.scene7.com/is/image/FalabellaCO/3831515_1?wid=800&hei=800&qlt=70)
+
+####  Si recuerdas anteriormente hablamos sobre un ejemplo de moldes de galletas las cuales son parecidas a una clase en el hecho de que son el molde para crear objetos en el caso del molde para galletas el resultado final serán galletas podemos crear tantas galletas como queramos,  utilizando el molde y sin embargo algo que hay que tomar en cuenta es que ninguna galleta será igual.
+#
+#### Puede que algunas galletas salgan un poco más doradas que otras o bien que una no sea tan esponjosa como la otra.
+#
+####  El caso es que siempre tendremos galletas diferentes lo mismo pasa con una clase,  ***en el  caso de las clases el resultado no serán galletas sino objetos*** también conocidos Como ***instancias de una clase*** esto podría traducirse como ***objeto de una clase x*** vamos a regresar a visual estudio para crear nuestra primera instancia de una clase u objeto.
 
 
