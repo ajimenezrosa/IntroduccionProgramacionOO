@@ -1220,7 +1220,37 @@ namespace ClaseDemo1
 
 ~~~
 
+#
+#### Para instanciar la clase lo haremos de una forma similar
+### Lo primero que debemos colocar es el tipo de datos para nuestro caso seria nuestra Clase **Rectangulo** luego debemos coloarle un nombre para este ejemplo yo lo pondre **rectangulo**,  luego debo utilizar una palabra especial ***new*** que significa nuevo y por ultimo el nombre de la clase , es decir ***Rectangulo()*** , como vez tiene parentesis.
+~~~C#
+namespace ClaseDemo1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Rectangulo rectangulo = new Rectangulo();
+        }
+    }
 
- <!-- ejemplo variable y r = algo sí quisiéramos definir una nueva -->
 
- 
+}
+
+~~~
+
+#### Debes quedarte con la idea de que esta es la plantilla para crear objetos nuevos de una clase en concreto.  En este caso la Clase ***Rectangulo***
+~~~C#
+ Rectangulo rectangulo = new Rectangulo();
+~~~
+
+Yo puedo definir otro rectangulo y definir que mi nuevo rectangulo se llamara rectangulo2 de la siguiente forma
+~~~C#
+ Rectangulo rectangulo2 = new Rectangulo();
+~~~
+#
+
+#### De esta forma podriamos crear instancias de una Clase que Serian para nuestro claso objetos vivientes (***rectangulo y rectangulo2***) los cuales podriamos usar a lo largo de nuestra aplicacion.
+
+#
+
