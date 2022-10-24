@@ -1203,7 +1203,7 @@ namespace Rectangulo
 # 
 
 
-#### Ahora  en visual estudio vamos a hacer la demostración yéndonos al archivo que se llama programa.cs que es donde tenemos definido el método ***main*** dentro de nuestro método estático Main vamos a definir entonces la instancia de la clase rectángulo si te fijas anteriormente definimos lo que es una variable en este caso definiendo el tipo de dato por ejemplo y le poníamos un hombre por
+#### Ahora  en visual estudio vamos a hacer la demostración yéndonos al archivo que se llama programa.cs que es donde tenemos definido el método ***main*** dentro de nuestro método estático Main vamos a definir entonces la instancia de la clase rectángulo si te fijas anteriormente definimos lo que es una variable en este caso definiendo el tipo de dato por ejemplo y le poníamos un nombre.
 ~~~C#
 namespace ClaseDemo1
 {
@@ -1250,7 +1250,7 @@ Yo puedo definir otro rectangulo y definir que mi nuevo rectangulo se llamara re
 ~~~
 #
 
-#### De esta forma podriamos crear instancias de una Clase que Serian para nuestro claso objetos vivientes (***rectangulo y rectangulo2***) los cuales podriamos usar a lo largo de nuestra aplicacion.
+#### De esta forma podriamos crear instancias de una Clase que Serian para nuestro caso objetos vivientes (***rectangulo y rectangulo2***) los cuales podriamos usar a lo largo de nuestra aplicacion.
 
 #
 
