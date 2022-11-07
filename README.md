@@ -1289,6 +1289,23 @@ Yo puedo definir otro rectangulo y definir que mi nuevo rectangulo se llamara re
  Qué significa privado
 
 
+#### En este caso todos los métodos y todos los miembros que están declarados dentro de una clase por **default** tienen un modificador de acceso privado lo cual significa que únicamente la clase que contenga esos métodos y esos miembros  podra utilizarlos.
+
+#### Entonces si yo quisiera que calcular área fuera visible desde el exterior podría colocar el modificador de acceso público el modificador de acceso tiene que ir antes de la definición del método en este caso antes de doble o void.
+
+#### Al colocar entonces public mas espacio  si te fijas parece que no ha cambiado nada
+#
+![](Img/ClaseRectangulo_metodo3.jpg)
+
+
+#### Sin embargo si yo regreso al archivo programa.cs borró el punto y lo vuelvo a colocar vemos que ya me aparece el metodo **calcullarArea**
+#
+![](Img/ClaseRectangulo_metodo4.jpg)
+
+
+## Practica
+#### Vamos a proceder a hacer esta misma tarea por el otro método que se llama calcular perímetro
+
 
 #
 
