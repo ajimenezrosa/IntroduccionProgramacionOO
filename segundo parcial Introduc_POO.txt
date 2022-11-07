@@ -1,0 +1,90 @@
+
+1 En C# es una sencuencia de enunciados dentro de una unidad lógica en nuestro programa. 
+Metodos
+Partes 
+Console.WriteLine()
+Desarrollo
+
+
+2  Convierte la representación de cadena de un número en su equivalente entero ,Flotantes etc con signo.
+Metodos
+Partes 
+Console.WriteLine()
+Desarrollo
+
+
+3  Las excepciones en C# proporcionan una forma estructurada, uniforme y con seguridad de tipos de controlar las condiciones de error del nivel de sistema y de la aplicación
+Verdadero**
+Falso
+
+
+4 Cuando se produce una excepción, Common Language Runtime (CLR) busca la instrucción catch que controla esta excepción
+Verdadero**
+Falso
+
+
+5  La instruccion  checked Se utiliza para:
+
+Colocar Valores Falsos o Verdaderos en el componente
+chequear las Operaciones Aritmeticas**
+Manejar Excepciones del programa
+Ninguna de las anteriores.
+
+
+6 la palabra clase es la raíz de la palabra clasificación y es que a menudo solemos utilizar clasificaciones en nuestro día a día.
+Verdadero**
+Falso
+
+
+7 En el mundo de la programación a las características se les llama:
+
+características 
+propiedades **
+comportamientos 
+métodos 
+Todas las Anteriores
+
+8 En el mundo de la programación a los comportamientos se les llama
+ características 
+propiedades 
+comportamientos 
+métodos **
+Ninguna de las Anteriores
+
+
+9 El hecho de poder modelar objetos definiendo sus métodos y propiedades se le conoce como
+
+Metodos 
+programación orientada a objetos.**
+Clases
+todas las anteriores
+
+
+10 Pilar de la programacion Orientada a Objetos Que permite Ocultar algun objeto para que otra persona pueda utilizarla sin necesidad de conocer su comportamiento interno.
+
+El encapsulamiento **
+La abstraccion
+La herencia
+El Polimorfismo
+
+11 el codigo  Rectangulo rectangulo2 = new Rectangulo();
+
+Crea la Instancia de una clase Rectangulo **
+Crea una clases rectangulo
+no hace nada el codigo no exite
+Se utiliza solo como referencia la clase podria funcionar sin este codigo.
+
+12 Selecciona los Cuatro Pilares de la Programacion Orientada a Objetos:
+
+
+Encapsulamiento
+Metodos
+Abstraccion
+Clases
+Herencia
+Propiedades
+Polimorfismo
+
+
+
+

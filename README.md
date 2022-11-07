@@ -1258,6 +1258,39 @@ Yo puedo definir otro rectangulo y definir que mi nuevo rectangulo se llamara re
 
 
 # Controlando la Accesibilidad a una clase
+#### Vimos Cómo podemos definir clases y Cómo podemos crear nuevas instancias de la clase recién definida sin embargo aunque no lo creas esa clase que tenemos aquí es totalmente inútil o no sirve para nada en estos momentos y no tanto porque tengo un error o porque sus métodos no funcionan.
+
+#### Esta Clase es inutil porque su información y sus métodos son inaccesibles.  
+# 
+![](Img\ClaseRectangulo_metodo1.jpg)
+
+#### Como puedes ver, aparecen todos los métodos y propiedades de la clase que creamos llamada Rectangle.
+#### Pero los métodos y propiedades que creamos en él no están ahí.
+
+
+#### NO podemos ver ningún método de los  que están definidos como parte del rectángulo Y ***esto es muy grave*** ya que de nada sirve que ya hemos definido tanto código si no lo podemos utilizar desde ningún otro lado fuera de la clase. 
+#### Esto es porque por ***default*** cuando se define una clase la misma forma una barrera hacia el exterior.
+
+
+#### Si te has fijado si regresamos a la clase rectángulo dentro de la misma clase si se puede utilizar lo que son estos Campos que tenemos definidos aquí si te fijas hemos podido utilizar lo que es altura rectángulo sin ningún problema y de la misma forma base rectángulo.
+
+![](Img/ClaseRectangulo_metodo2.jpg)
+#
+
+
+#### De igual forma Yo podría utilizar sí quisiera por ejemplo uno de los métodos dentro del otro por ejemplo dentro de calcular perímetro Yo podría mandar a llamar calcular áreas y ningún problema Si en dado caso deseamos dar acceso a los métodos y campos de una clase podemos seguir utilizándolo que se llama modificador de acceso
+
+#### En esta ocasión vamos a ver solamente dos de los más utilizados el modificador de acceso 
+    public
+ Qué significa como su nombre lo dice público 
+ Y el modificador de acceso 
+
+    private 
+ Qué significa privado
+
+
+
+#
 
 # Constructores de una clase
 
