@@ -37,6 +37,8 @@
 #### [11.2 - Que es una Clase](#clases)
 #### [11.3 Definiendo Metodos para la Clase](#definicionmetodos)
 #### [11.4 Creando Instancias de una Clase](#CreandoinstanciaClase)
+#### [12 - Controlando la Accesibilidad a una clase](#Controlesacceosclases)
+
 
 #
 
@@ -1257,12 +1259,12 @@ Yo puedo definir otro rectangulo y definir que mi nuevo rectangulo se llamara re
 #
 
 
-# Controlando la Accesibilidad a una clase
+# Controlando la Accesibilidad a una clase<a name="Controlesacceosclases"></a>
 #### Vimos Cómo podemos definir clases y Cómo podemos crear nuevas instancias de la clase recién definida sin embargo aunque no lo creas esa clase que tenemos aquí es totalmente inútil o no sirve para nada en estos momentos y no tanto porque tengo un error o porque sus métodos no funcionan.
 
 #### Esta Clase es inutil porque su información y sus métodos son inaccesibles.  
 # 
-![](Img\ClaseRectangulo_metodo1.jpg)
+![](Img/ClaseRectangulo_metodo1.jpg)
 
 #### Como puedes ver, aparecen todos los métodos y propiedades de la clase que creamos llamada Rectangle.
 #### Pero los métodos y propiedades que creamos en él no están ahí.
