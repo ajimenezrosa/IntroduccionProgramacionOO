@@ -1482,6 +1482,12 @@ class GFG {
 
 # Destruyendo un objeto
 
+     Destruya el objeto de clase asignando un valor null en C#
+
+#### El objeto de clase es una variable de tipo de referencia en un programa de C#. Significa que es esencialmente un puntero que tiene una referencia a la ubicación de la memoria de una clase. Desafortunadamente, no existe tal cosa como destruir un objeto en C#. Solo podemos deshacernos de un objeto en C#, lo cual solo es posible si la clase implementa IDisposable. Para los objetos de cualquier otro tipo de clase, tenemos que asignar un valor null al objeto de la clase. Significa que el objeto no apunta a ninguna ubicación de la memoria. El objeto de clase sale del alcance y el recolector de basura recoge la basura y desasigna la memoria. El siguiente ejemplo de código nos muestra cómo podemos destruir un objeto de clase asignando un valor null en C#.
+#
+
+
 # Metodos Staticos
 
 # Campos Compartidos
