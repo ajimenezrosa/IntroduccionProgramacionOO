@@ -38,7 +38,7 @@
 #### [11.3 Definiendo Metodos para la Clase](#definicionmetodos)
 #### [11.4 Creando Instancias de una Clase](#CreandoinstanciaClase)
 #### [12 - Controlando la Accesibilidad a una clase](#Controlesacceosclases)
-
+#### [12. 1 Constructores de una clase](#ContructorClase)
 
 #
 
@@ -1311,7 +1311,84 @@ Yo puedo definir otro rectangulo y definir que mi nuevo rectangulo se llamara re
 
 #
 
-# Constructores de una clase
+# Constructores de una clase<a name="ContructorClase"></a>
+[Learn  .NET  Guía de C#  Guía de programación  Clases y estructuras ](https://learn.microsoft.com/es-es/dotnet/csharp/programming-guide/classes-and-structs/constructors)
+
+#### Cada vez que se crea una clase o struct, se llama a su constructor. Una clase o struct puede tener varios constructores que toman argumentos diferentes. Los constructores permiten al programador establecer valores predeterminados, limitar la creación de instancias y escribir código flexible y fácil de leer. Para obtener más información y ejemplos, vea Constructores de instancias y Uso de constructores.
+#
+## Sintaxis del constructor
+#
+#### Un constructor es un método cuyo nombre es igual que el nombre de su tipo. Su firma del método incluye solo un modificador de acceso opcional, el nombre del método y su lista de parámetros; no incluye un tipo de valor devuelto. En el ejemplo siguiente se muestra el constructor de una clase denominada Person.
+#
+~~~c#
+public class Person
+{
+   private string last;
+   private string first;
+
+   public Person(string lastName, string firstName)
+   {
+      last = lastName;
+      first = firstName;
+   }
+
+   // Remaining implementation of Person class.
+}
+~~~
+#
+#### Si un constructor puede implementarse como una instrucción única, puede usar una definición del cuerpo de expresión. En el ejemplo siguiente se define una clase Location cuyo constructor tiene un único parámetro de cadena denominado name. La definición del cuerpo de expresión asigna el argumento al campo locationName.
+#
+~~~c#
+public class Location
+{
+   private string locationName;
+
+   public Location(string name) => Name = name;
+
+   public string Name
+   {
+      get => locationName;
+      set => locationName = value;
+   }
+}
+~~~
+
+## Constructores estáticos
+#### En los ejemplos anteriores se han mostrado constructores de instancia, que crean un objeto nuevo. Una clase o struct también puede tener un constructor estático, que inicializa los miembros estáticos del tipo. Los constructores estáticos no tienen parámetros. Si no proporciona un constructor estático para inicializar los campos estáticos, el compilador de C# inicializa los campos estáticos en su valor predeterminado, tal como se muestra en el artículo Valores predeterminados de los tipos de C#.
+
+#### En el ejemplo siguiente se usa un constructor estático para inicializar un campo estático.
+~~~c#
+public class Adult : Person
+{
+   private static int minimumAge;
+
+   public Adult(string lastName, string firstName) : base(lastName, firstName)
+   { }
+
+   static Adult()
+   {
+      minimumAge = 18;
+   }
+
+   // Remaining implementation of Adult class.
+}
+~~~
+También puede definir un constructor estático con una definición de cuerpo de expresión, como se muestra en el ejemplo siguiente.
+~~~c#
+public class Child : Person
+{
+   private static int maximumAge;
+
+   public Child(string lastName, string firstName) : base(lastName, firstName)
+   { }
+
+   static Child() => maximumAge = 18;
+
+   // Remaining implementation of Child class.
+}
+~~~
+
+
 
 # SobreCarga de contructores
 
