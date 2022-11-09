@@ -1391,6 +1391,94 @@ public class Child : Person
 
 
 # SobreCarga de contructores
+#### Es bastante similar a la sobrecarga de métodos . Es la capacidad de redefinir un Constructor en más de una forma. Un usuario puede implementar la sobrecarga de constructores definiendo dos o más constructores en una clase que comparten el mismo nombre. C# puede distinguir los constructores con diferentes firmas. es decir, el constructor debe tener el mismo nombre pero con una lista de parámetros diferente.
+#
+##### Podemos sobrecargar constructores de diferentes formas de la siguiente manera:
+
+- Usando diferentes tipos de argumentos
+- Usando diferente número de argumentos
+- Usando un orden diferente de argumentos
+
+##### Cambiando los tipos de datos de los parámetros
+#
+### Ejemplo:
+    public ADD (int a, float b);
+    public ADD (string a, int b);
+
+#### Aquí el nombre de la clase es ADD . En el primer constructor hay dos parámetros, el primero es int y otro es float y en el segundo constructor, también hay dos parámetros, el primero es tipo string y otro es tipo int .
+#
+#### Aquí los constructores tienen el mismo nombre pero los tipos de parámetros son diferentes, similar al concepto de sobrecarga de métodos.
+~~~c#
+// C# program to Demonstrate the overloading of 
+// constructor when the types of arguments 
+// are different
+using System;
+  
+class ADD {
+      
+    int x, y;
+    double f;
+    string s;
+  
+    // 1st constructor
+    public ADD(int a, double b)
+    {
+        x = a;
+        f = b;
+    }
+  
+    // 2nd constructor
+    public ADD(int a, string b)
+    {
+        y = a;
+        s = b;
+    }
+  
+    // showing 1st constructor's result
+    public void show()
+    {
+        Console.WriteLine("1st constructor (int + float): {0} ",
+                                                       (x + f));
+    }
+  
+    // shows 2nd constructor's result
+    public void show1()
+    {
+        Console.WriteLine("2nd constructor (int + string): {0}", 
+                                                       (s + y));
+    }
+}
+  
+// Driver Class
+class GFG {
+      
+    // Main Method
+    static void Main()
+    {
+          
+        // Creating instance and
+        // passing arguments
+        // It will call the first constructor
+        ADD g = new ADD(10, 20.2);
+      
+        // calling the method
+        g.show();
+  
+  
+        // Creating instance and 
+        // passing arguments
+        // It will call the second constructor
+        ADD q = new ADD(10, "Roll No. is ");
+      
+        // calling the method
+        q.show1();
+    }
+}
+~~~
+
+
+
+
 
 # Destruyendo un objeto
 
