@@ -38,7 +38,10 @@
 #### [11.3 Definiendo Metodos para la Clase](#definicionmetodos)
 #### [11.4 Creando Instancias de una Clase](#CreandoinstanciaClase)
 #### [12 - Controlando la Accesibilidad a una clase](#Controlesacceosclases)
-#### [12. 1 Constructores de una clase](#ContructorClase)
+#### [12.1 Constructores de una clase](#ContructorClase)
+#### [12.2 Constructores estáticos](#contructorestatido)
+#### [12.3 SobreCarga de contructores](#sobrecargametodo)
+#### [12.4 Destruyendo un objeto](#destuirobjetosClases)
 
 #
 
@@ -1353,7 +1356,7 @@ public class Location
 }
 ~~~
 
-## Constructores estáticos
+## Constructores estáticos<a name="contructorestatido"></a>
 #### En los ejemplos anteriores se han mostrado constructores de instancia, que crean un objeto nuevo. Una clase o struct también puede tener un constructor estático, que inicializa los miembros estáticos del tipo. Los constructores estáticos no tienen parámetros. Si no proporciona un constructor estático para inicializar los campos estáticos, el compilador de C# inicializa los campos estáticos en su valor predeterminado, tal como se muestra en el artículo Valores predeterminados de los tipos de C#.
 
 #### En el ejemplo siguiente se usa un constructor estático para inicializar un campo estático.
@@ -1390,7 +1393,7 @@ public class Child : Person
 
 
 
-# SobreCarga de contructores
+# SobreCarga de contructores<a name="sobrecargametodo"></a>
 #### Es bastante similar a la sobrecarga de métodos . Es la capacidad de redefinir un Constructor en más de una forma. Un usuario puede implementar la sobrecarga de constructores definiendo dos o más constructores en una clase que comparten el mismo nombre. C# puede distinguir los constructores con diferentes firmas. es decir, el constructor debe tener el mismo nombre pero con una lista de parámetros diferente.
 #
 ##### Podemos sobrecargar constructores de diferentes formas de la siguiente manera:
@@ -1480,12 +1483,24 @@ class GFG {
 
 
 
-# Destruyendo un objeto
+# Destruyendo un objeto<a name="destuirobjetosClases"></a>
 
-     Destruya el objeto de clase asignando un valor null en C#
-
-#### El objeto de clase es una variable de tipo de referencia en un programa de C#. Significa que es esencialmente un puntero que tiene una referencia a la ubicación de la memoria de una clase. Desafortunadamente, no existe tal cosa como destruir un objeto en C#. Solo podemos deshacernos de un objeto en C#, lo cual solo es posible si la clase implementa IDisposable. Para los objetos de cualquier otro tipo de clase, tenemos que asignar un valor null al objeto de la clase. Significa que el objeto no apunta a ninguna ubicación de la memoria. El objeto de clase sale del alcance y el recolector de basura recoge la basura y desasigna la memoria. El siguiente ejemplo de código nos muestra cómo podemos destruir un objeto de clase asignando un valor null en C#.
+     Duración de los objetos: cómo se crean y destruyen (Visual Basic)
+#### Mediante el uso de la palabra clave New se crea una instancia de una clase, un objeto. A menudo, las tareas de inicialización deben realizarse en los objetos nuevos antes de utilizarlos. Las tareas de inicialización comunes incluyen abrir archivos, conectarse a bases de datos y leer los valores de las claves del registro. Visual Basic controla la inicialización de objetos nuevos mediante procedimientos conocidos como constructores (métodos especiales que permiten controlar la inicialización).
 #
+#### Después de que un objeto abandone el ámbito, se libera por Common Language Runtime (CLR). Visual Basic controla la liberación de recursos del sistema mediante procedimientos conocidos como destructores. Juntos, los constructores y los destructores permiten la creación de bibliotecas de clases completas y predecibles.
+#
+## Usar constructores y destructores
+
+#### Los constructores y los destructores controlan la creación y la destrucción de objetos. Los procedimientos Sub New y Sub Finalize de Visual Basic inicializan y destruyen objetos; sustituyen a los métodos Class_Initialize y Class_Terminate usados en Visual Basic 6.0 y versiones anteriores.
+#
+## Sub New
+#### El constructor Sub New solo puede ejecutarse una vez cuando se crea una clase. No se puede llamar explícitamente en ningún lugar que no sea la primera línea de código de otro constructor de la misma clase o de una clase derivada. Además, el código del método Sub New siempre se ejecuta antes que cualquier otro código en una clase. Visual Basic crea implícitamente un constructor Sub New en tiempo de ejecución si no se define explícitamente un procedimiento Sub New en una clase.
+#
+#### Para crear un constructor para una clase, cree un procedimiento denominado Sub New en cualquier parte de la definición de clase. Para crear un constructor parametrizado, especifique los nombres y los tipos de datos de los argumentos en Sub New tal y como haría al especificar argumentos en cualquier otro procedimiento, como en el código siguiente:
+#
+
+
 
 
 # Metodos Staticos
